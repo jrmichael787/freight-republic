@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------  Global resets & base styles  ---------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #111111;
+  color: #DEE2E4;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ----------  Custom scrollbar  ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1C1C1C;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF751F 0%, #E5640E 100%);
+  border-radius: 10px;
+  border: 2px solid #1C1C1C;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9549;
+}
+
+/* ----------  Selection color  ---------- */
+::selection {
+  background: #FF751F;
+  color: #FFFFFF;
+}
+
+/* ----------  Font weight helpers (Barlow Condensed uses numeric weights) ---------- */
+.font-300 { font-weight: 300; }
+.font-400 { font-weight: 400; }
+.font-500 { font-weight: 500; }
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
+.font-800 { font-weight: 800; }
+.font-900 { font-weight: 900; }
+
+/* ----------  Height helper used by Navbar ---------- */
+.h-18 {
+  height: 4.5rem;
+}
+
+/* ----------  Noise / grain texture overlay ---------- */
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* ----------  Glass / frost effect utility ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-dark {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ----------  Gradient text helpers ---------- */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FF751F 0%, #FF9549 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ----------  Reveal / fade-in on scroll (pure CSS fallback) ---------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+/* ----------  Subtle glow pulse for CTAs ---------- */
+@keyframes softGlow {
+  0%, 100% { box-shadow: 0 0 22px rgba(255,117,31,0.35); }
+  50%      { box-shadow: 0 0 42px rgba(255,117,31,0.65); }
+}
+
+/* ----------  Prevent FOUC for fonts ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* ----------  Marquee (ticker) ---------- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ----------  Floating cards in Hero ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+/* ----------  Pulsing CTA glow ---------- */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255,117,31,0.4), 0 4px 16px rgba(255,117,31,0.2); }
+  50%       { box-shadow: 0 0 44px rgba(255,117,31,0.75), 0 8px 32px rgba(255,117,31,0.4); }
+}
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* ----------  Line-clamp ---------- */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ----------  h-18 helper ---------- */
+.h-18 { height: 4.5rem; }
+
+/* ----------  Dark select options ---------- */
+select option {
+  background-color: #1C1C1C;
+  color: #DEE2E4;
+}
+
+/* ----------  Smooth input focus ring ---------- */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
