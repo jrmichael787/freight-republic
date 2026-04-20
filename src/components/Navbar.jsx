@@ -84,9 +84,9 @@ export default function Navbar() {
 
             {/* Right CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <a href="tel:+1-800-FREIGHT" className="flex items-center gap-2 text-silver hover:text-white text-sm font-body transition-colors duration-200">
+              <a href="tel:+13072176455" className="flex items-center gap-2 text-silver hover:text-white text-sm font-body transition-colors duration-200">
                 <Phone size={14} className="text-orange" />
-                <span className="font-500">24/7 Support</span>
+                <span className="font-500">(307) 217-6455</span>
               </a>
               <motion.a
                 href="#contact"

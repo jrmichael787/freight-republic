@@ -75,18 +75,26 @@ export default function Footer() {
 
             {/* Contact info */}
             <div className="space-y-3">
-              <a href="tel:+18003734448" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body">
+              <a href="tel:+13072176455" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body">
                 <Phone size={14} className="text-orange flex-shrink-0" />
-                +1 (800) FREIGHT
+                (307) 217-6455
               </a>
               <a href="mailto:info@freightrepublicllc.co" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body break-all">
                 <Mail size={14} className="text-orange flex-shrink-0" />
                 info@freightrepublicllc.co
               </a>
-              <div className="flex items-start gap-2.5 text-silver text-sm font-body">
+              <a
+                href="https://maps.google.com/?q=1021+E+Lincolnway+Suite+412+Cheyenne+WY+82001"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body leading-relaxed"
+              >
                 <MapPin size={14} className="text-orange flex-shrink-0 mt-0.5" />
-                United States (Virtual Office)
-              </div>
+                <span>
+                  1021 E Lincolnway, Suite 412<br />
+                  Cheyenne, WY 82001
+                </span>
+              </a>
             </div>
           </div>
 

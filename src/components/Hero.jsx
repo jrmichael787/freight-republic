@@ -184,9 +184,9 @@ export default function Hero() {
             {/* Floating stat cards */}
             {floatingCards.map((card, i) => {
               const positions = [
-                'absolute -top-4 -right-4 lg:-right-8',
-                'absolute top-1/2 -left-4 lg:-left-10 -translate-y-1/2',
-                'absolute -bottom-4 -right-4 lg:-right-8',
+                'absolute -top-3 -right-2 sm:-right-4 lg:-right-8',
+                'absolute top-1/2 -left-2 sm:-left-4 lg:-left-10 -translate-y-1/2',
+                'absolute -bottom-3 -right-2 sm:-right-4 lg:-right-8',
               ]
               return (
                 <motion.div
@@ -194,12 +194,12 @@ export default function Hero() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.8 + i * 0.15, type: 'spring' }}
-                  className={`${positions[i]} backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-3 lg:p-4 shadow-xl min-w-[130px]`}
+                  className={`${positions[i]} backdrop-blur-xl bg-charcoal-deeper/85 border border-white/30 rounded-2xl p-3 lg:p-4 shadow-2xl min-w-[130px] ring-1 ring-black/20`}
                   style={{ animation: `float ${4 + i}s ease-in-out infinite` }}
                 >
-                  <div className="text-xs text-silver font-body mb-1">{card.label}</div>
-                  <div className="text-xl font-heading font-800 text-white">{card.value}</div>
-                  <div className={`text-xs font-body font-500 ${card.color}`}>{card.delta}</div>
+                  <div className="text-[11px] text-white/70 font-body font-500 mb-1 tracking-wide">{card.label}</div>
+                  <div className="text-xl font-heading font-800 text-white leading-tight">{card.value}</div>
+                  <div className={`text-xs font-body font-600 mt-0.5 ${card.color}`}>{card.delta}</div>
                 </motion.div>
               )
             })}

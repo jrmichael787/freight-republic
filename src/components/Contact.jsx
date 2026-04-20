@@ -19,9 +19,14 @@ const equipmentOptions = [
 ]
 
 const contactInfo = [
-  { icon: Phone, label: 'Phone', value: '+1 (800) FREIGHT', href: 'tel:+18003734448' },
+  { icon: Phone, label: 'Phone', value: '(307) 217-6455', href: 'tel:+13072176455' },
   { icon: Mail, label: 'Email', value: 'info@freightrepublicllc.co', href: 'mailto:info@freightrepublicllc.co' },
-  { icon: MapPin, label: 'Address', value: 'United States (Virtual Office)', href: null },
+  {
+    icon: MapPin,
+    label: 'Headquarters',
+    value: '1021 E Lincolnway, Suite 412, Cheyenne, WY 82001',
+    href: 'https://maps.google.com/?q=1021+E+Lincolnway+Suite+412+Cheyenne+WY+82001',
+  },
 ]
 
 export default function Contact() {
@@ -76,7 +81,7 @@ export default function Contact() {
       }
     } catch (err) {
       setError(
-        'Sorry, something went wrong. Please email us directly at info@freightrepublicllc.co or call +1 (800) FREIGHT.'
+        'Sorry, something went wrong. Please email us directly at info@freightrepublicllc.co or call (307) 217-6455.'
       )
     } finally {
       setLoading(false)
