@@ -189,7 +189,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-silver/50 font-body text-xs text-center sm:text-left">
-            © 2026 Freight Republic LLC. All Rights Reserved.
+            © 2026 Freight Republic LLC · All Rights Reserved · Proudly serving carriers across the USA
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Privacy Policy', 'Terms of Service', 'Dispatcher-Carrier Agreement'].map((item) => (
