@@ -95,7 +95,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                Start Free Trial
+                First Load Free
               </motion.a>
             </div>
 
@@ -144,7 +144,7 @@ export default function Navbar() {
                 transition={{ delay: 0.3 }}
                 className="mt-2 px-4 py-3 bg-orange hover:bg-orange-dark text-white font-body font-600 rounded-lg text-center transition-all duration-300"
               >
-                🚀 Claim Your 7-Day Free Trial
+                🚀 Get Your First Load Free
               </motion.a>
             </div>
           </motion.div>

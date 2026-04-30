@@ -49,7 +49,7 @@ export default function Footer() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Claim Free Trial <ArrowRight size={16} />
+            Claim First Load Free <ArrowRight size={16} />
           </motion.button>
         </div>
       </div>

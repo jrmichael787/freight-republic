@@ -168,7 +168,7 @@ export default function HowItWorks() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
-              Claim Your 7-Day Free Trial
+              Get Your First Load Free
             </motion.button>
           </div>
         </motion.div>

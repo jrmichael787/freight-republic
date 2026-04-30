@@ -154,7 +154,7 @@ export default function Testimonials() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Get Your Free Trial Today
+            Book Your First Load Free
           </motion.button>
         </motion.div>
       </div>

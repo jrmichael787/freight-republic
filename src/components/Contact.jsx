@@ -54,7 +54,7 @@ export default function Contact() {
     try {
       const payload = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        subject: `🚚 New Free Trial Request — ${form.fullName}`,
+        subject: `🚚 New First Load Free Request — ${form.fullName}`,
         from_name: 'Freight Republic Website',
         'Full Name': form.fullName,
         'Email': form.email,
@@ -113,7 +113,7 @@ export default function Contact() {
             Ready to Maximize Your Truck's Earning Potential?
           </h2>
           <p className="text-silver font-body text-lg max-w-2xl mx-auto leading-relaxed">
-            Fill out the form below and a dedicated dispatcher will contact you within 2 hours to get your free trial started.
+            Fill out the form below and a dedicated dispatcher will contact you within 2 hours to book your first load — completely free, no commission, no commitment.
           </p>
         </motion.div>
 
@@ -169,9 +169,9 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 size={18} className="text-orange flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-white font-body font-600 text-sm mb-1">7-Day Free Trial — No Risk</div>
+                  <div className="text-white font-body font-600 text-sm mb-1">First Load 100% Free — Zero Commission</div>
                   <div className="text-silver/70 font-body text-xs leading-relaxed">
-                    No credit card required. No contracts. Start dispatching with us risk-free and see the difference in your first week.
+                    No credit card required. No contracts. We book your first load completely free so you can experience the Freight Republic difference before paying a dime.
                   </div>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                   </div>
                   <h3 className="font-heading font-800 text-white text-2xl mb-3">Request Received!</h3>
                   <p className="text-silver font-body leading-relaxed max-w-md mx-auto">
-                    A dedicated dispatcher will contact you within 2 hours to start your free trial. Welcome to Freight Republic!
+                    A dedicated dispatcher will contact you within 2 hours to book your first load — on us. Welcome to Freight Republic!
                   </p>
                 </motion.div>
               ) : (
@@ -345,7 +345,7 @@ export default function Contact() {
                     ) : (
                       <>
                         <Send size={18} />
-                        Send Request & Start Free Trial
+                        Send Request & Book My First Load Free
                       </>
                     )}
                   </motion.button>

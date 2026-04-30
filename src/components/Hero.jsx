@@ -117,7 +117,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.97 }}
               >
-                Claim Your 7-Day Free Trial Today!
+                Get Your First Load Free Today!
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-200" />
               </motion.button>
               <motion.button

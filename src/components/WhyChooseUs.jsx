@@ -169,10 +169,10 @@ export default function WhyChooseUs() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Start Your Free 7-Day Trial →
+                Get Your First Load Free →
               </motion.button>
 
-              <p className="text-center text-silver/50 text-xs font-body mt-3">No credit card required. Cancel anytime.</p>
+              <p className="text-center text-silver/50 text-xs font-body mt-3">Zero commission on your first load. No contracts. No risk.</p>
             </motion.div>
           </div>
         </div>
