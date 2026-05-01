@@ -75,9 +75,13 @@ export default function Footer() {
 
             {/* Contact info */}
             <div className="space-y-3">
-              <a href="tel:+13072176455" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body">
+              <a href="tel:+17202512742" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body">
                 <Phone size={14} className="text-orange flex-shrink-0" />
-                (307) 217-6455
+                (720) 251-2742
+              </a>
+              <a href="tel:+14052546925" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body">
+                <Phone size={14} className="text-orange flex-shrink-0" />
+                (405) 254-6925 <span className="text-orange/70 text-xs">— CEO Direct</span>
               </a>
               <a href="mailto:info@freightrepublicllc.co" className="flex items-center gap-2.5 text-silver hover:text-orange transition-colors text-sm font-body break-all">
                 <Mail size={14} className="text-orange flex-shrink-0" />

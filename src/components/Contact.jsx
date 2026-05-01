@@ -19,7 +19,8 @@ const equipmentOptions = [
 ]
 
 const contactInfo = [
-  { icon: Phone, label: 'Phone', value: '(307) 217-6455', href: 'tel:+13072176455' },
+  { icon: Phone, label: '24/7 Dispatch Line', value: '(720) 251-2742', href: 'tel:+17202512742' },
+  { icon: Phone, label: 'CEO Direct Line', value: '(405) 254-6925', href: 'tel:+14052546925' },
   { icon: Mail, label: 'Email', value: 'info@freightrepublicllc.co', href: 'mailto:info@freightrepublicllc.co' },
   {
     icon: MapPin,
@@ -81,7 +82,7 @@ export default function Contact() {
       }
     } catch (err) {
       setError(
-        'Sorry, something went wrong. Please email us directly at info@freightrepublicllc.co or call (307) 217-6455.'
+        'Sorry, something went wrong. Please email us directly at info@freightrepublicllc.co or call (720) 251-2742.'
       )
     } finally {
       setLoading(false)
