@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Linkedin, ArrowRight } from 'lucide-react'
 import logoPrimary from '../assets/logo-primary.png'
 
 const quickLinks = [
@@ -22,10 +22,7 @@ const services = [
 ]
 
 const socials = [
-  { icon: Facebook, label: 'Facebook', href: '#' },
-  { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: Twitter, label: 'Twitter/X', href: '#' },
-  { icon: Linkedin, label: 'LinkedIn', href: '#' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/freight-republic-llc/' },
 ]
 
 export default function Footer() {
@@ -154,12 +151,15 @@ export default function Footer() {
                 <motion.a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-xl bg-charcoal border border-white/10 flex items-center justify-center text-silver hover:text-white hover:bg-orange hover:border-orange transition-all duration-300"
-                  whileHover={{ scale: 1.1 }}
+                  className="flex items-center gap-2 px-4 h-9 rounded-xl bg-charcoal border border-white/10 text-silver hover:text-white hover:bg-orange hover:border-orange transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Icon size={16} />
+                  <span className="text-xs font-body font-500">{label}</span>
                 </motion.a>
               ))}
             </div>
